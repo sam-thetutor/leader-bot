@@ -90,7 +90,8 @@ async function monitor() {
 // Keep alive server setup
 keepAlive();
 
-// Schedule monitoring
-schedule.scheduleJob('*/5 * * * * *', monitor);
+// Schedule monitoring once every 120 seconds
+
+schedule.scheduleJob('*/120 * * * * *', monitor);
 
 console.log('Miner Tracker Bot started...'); 
